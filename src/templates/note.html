@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+
+
+{% block content %}
+<div class="container">
+    <h1>{% block title %} Projet Ontologie Quentin GABOT & Logan SERVANT {% endblock %}</h1>
+    {% for post in posts %}
+    <a href="{{ url_for('post', post_id=post['id']) }}">
+        <h2>{{ post['produit'] }}</h2>
+    </a>
+    <span class="badge badge-primary">{{ post['note'] }} sur 5 selon {{ post['nombre_reviews'] }} évaluations.</span>
+{% endfor %}
+</div>
+{% endblock %}

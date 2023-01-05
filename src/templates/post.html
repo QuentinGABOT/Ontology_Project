@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    <h2>{% block title %} {{ post['id'] }} {% endblock %}</h2>
+    <div class="container">
+        <p class="badge badge-primary">La catégorie du produit : {{ post['type'] }}</p>
+    </div>
+    <div class="container">
+        <p class="badge badge-primary">L'appelation du produit : {{ post['appelation'] }}</p>
+    </div>
+    <div class="container">
+        <p class="badge badge-primary">La/les couleur(s) du produit : {{ post['couleur'] }}</p>
+    </div>
+    <div class="container">
+        <p class="badge badge-primary">Le/les couleur(s) matériau(x) du produit : {{ post['materiaux'] }}</p>
+    </div>
+    <div class="container">
+        <p class="badge badge-primary">La marque du produit : {{ post['marque'] }}</p>
+    </div>
+    <div class="container">
+        <p class="badge badge-primary">Le montant du produit : {{ post['montant'] }} $</p>
+    </div>
+    <div class="container">
+        <p class="badge badge-primary">Le nombre d'évaluations du produit : {{ post['nombre_reviews'] }}</p>
+    </div>
+    <div class="container">
+        <p class="badge badge-primary">La note moyenne du produit : {{ post['note'] }}</p>
+    </div>
+    <div class="container">
+        <p class="badge badge-primary">Le produit est-il en solde ? : {{ post['solde'] }}</p>
+    </div>
+    <div class="container">
+        <p class="badge badge-primary">Le/les style(s) du produit : {{ post['style'] }}</p>
+    </div>
+</div>
+{% endblock %}

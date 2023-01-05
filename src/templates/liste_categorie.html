@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+
+
+{% block content %}
+<div class="container">
+    <h1>{% block title %} Projet Ontologie Quentin GABOT & Logan SERVANT {% endblock %}</h1>
+    {% for post in posts %}
+    <a href="#">
+        <h2>{{ post['id'] }}</h2>
+    </a>
+    <span class="badge badge-primary">Nom de la catégorie : {{ post['categorie'] }}</span>
+    <span class="badge badge-primary">Nom de la catégorie mère (si existante) :{{ post['sous_categorie'] }}</span>
+{% endfor %}
+</div>
+{% endblock %}
