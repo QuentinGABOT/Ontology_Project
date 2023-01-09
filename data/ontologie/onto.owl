@@ -57,6 +57,7 @@
         <rdfs:domain rdf:resource="http://data.pariscite.fr/def/onto#Livraison"/>
         <rdfs:range rdf:resource="http://data.pariscite.fr/def/onto#Client"/>
         <rdfs:comment xml:lang="fr">Exprime le fait que le destinataire d&apos;une Livraison soit un Client.</rdfs:comment>
+        <rdfs:label xml:lang="fr">acheminé chez</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -70,6 +71,7 @@
         <rdfs:domain rdf:resource="http://data.pariscite.fr/def/onto#Livraison"/>
         <rdfs:range rdf:resource="http://data.pariscite.fr/def/onto#Entrepôt"/>
         <rdfs:comment xml:lang="fr">Exprime le fait que l&apos;expéditeur d&apos;une Livraison soit un Entrepôt.</rdfs:comment>
+        <rdfs:label xml:lang="fr">acheminé depuis</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -83,6 +85,7 @@
         <rdfs:domain rdf:resource="http://data.pariscite.fr/def/onto#Commande"/>
         <rdfs:range rdf:resource="http://data.pariscite.fr/def/onto#Produit"/>
         <rdfs:comment xml:lang="fr">Exprime le fait qu&apos;une Commande soit composée d&apos;au moins un Produit.</rdfs:comment>
+        <rdfs:label xml:lang="fr">comporte</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -97,6 +100,7 @@
         <rdfs:domain rdf:resource="http://data.pariscite.fr/def/onto#Commande"/>
         <rdfs:range rdf:resource="http://data.pariscite.fr/def/onto#Site"/>
         <rdfs:comment xml:lang="fr">Exprime le fait qu&apos;une Commande soit passée sur un Site.</rdfs:comment>
+        <rdfs:label xml:lang="fr">effectuée sur</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -105,13 +109,16 @@
 
     <owl:ObjectProperty rdf:about="http://data.pariscite.fr/def/onto#estAuthentifié">
         <owl:inverseOf rdf:resource="http://data.pariscite.fr/def/onto#s&apos;authentifie"/>
+        <rdfs:label xml:lang="fr">est authentifié</rdfs:label>
     </owl:ObjectProperty>
     
 
 
     <!-- http://data.pariscite.fr/def/onto#estComportéPar -->
 
-    <owl:ObjectProperty rdf:about="http://data.pariscite.fr/def/onto#estComportéPar"/>
+    <owl:ObjectProperty rdf:about="http://data.pariscite.fr/def/onto#estComportéPar">
+        <rdfs:label xml:lang="fr">est comporté par</rdfs:label>
+    </owl:ObjectProperty>
     
 
 
@@ -119,6 +126,7 @@
 
     <owl:ObjectProperty rdf:about="http://data.pariscite.fr/def/onto#estHébergéPar">
         <owl:inverseOf rdf:resource="http://data.pariscite.fr/def/onto#héberge"/>
+        <rdfs:label xml:lang="fr">est hébergé par</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -127,6 +135,7 @@
 
     <owl:ObjectProperty rdf:about="http://data.pariscite.fr/def/onto#estNaviguéPar">
         <owl:inverseOf rdf:resource="http://data.pariscite.fr/def/onto#navigue"/>
+        <rdfs:label xml:lang="fr">est navigué par</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -135,6 +144,7 @@
 
     <owl:ObjectProperty rdf:about="http://data.pariscite.fr/def/onto#estPasséPar">
         <owl:inverseOf rdf:resource="http://data.pariscite.fr/def/onto#passe"/>
+        <rdfs:label xml:lang="fr">est passé par</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -143,6 +153,7 @@
 
     <owl:ObjectProperty rdf:about="http://data.pariscite.fr/def/onto#estPossédé">
         <owl:inverseOf rdf:resource="http://data.pariscite.fr/def/onto#possède"/>
+        <rdfs:label xml:lang="fr">est possédé</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -151,6 +162,7 @@
 
     <owl:ObjectProperty rdf:about="http://data.pariscite.fr/def/onto#estStockéPar">
         <owl:inverseOf rdf:resource="http://data.pariscite.fr/def/onto#stocke"/>
+        <rdfs:label xml:lang="fr">est stocké par</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -164,6 +176,7 @@
         <rdfs:domain rdf:resource="http://data.pariscite.fr/def/onto#Entreprise"/>
         <rdfs:range rdf:resource="http://data.pariscite.fr/def/onto#Site"/>
         <rdfs:comment xml:lang="fr">Exprime le fait qu&apos;une Entreprise possède un Site.</rdfs:comment>
+        <rdfs:label xml:lang="fr">héberge</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -176,6 +189,7 @@
         <rdfs:domain rdf:resource="http://data.pariscite.fr/def/onto#Client"/>
         <rdfs:range rdf:resource="http://data.pariscite.fr/def/onto#Site"/>
         <rdfs:comment xml:lang="fr">Exprime le fait qu&apos;un Client utilise un Site.</rdfs:comment>
+        <rdfs:label xml:lang="fr">navigue</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -189,6 +203,7 @@
         <rdfs:domain rdf:resource="http://data.pariscite.fr/def/onto#Client"/>
         <rdfs:range rdf:resource="http://data.pariscite.fr/def/onto#Commande"/>
         <rdfs:comment xml:lang="fr">Exprime le fait qu&apos;un Client effectue une Commande.</rdfs:comment>
+        <rdfs:label xml:lang="fr">passe</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -202,6 +217,7 @@
         <rdfs:domain rdf:resource="http://data.pariscite.fr/def/onto#Entreprise"/>
         <rdfs:range rdf:resource="http://data.pariscite.fr/def/onto#Entrepôt"/>
         <rdfs:comment xml:lang="fr">Exprime le fait qu&apos;une Entreprise détienne un Entrepôt.</rdfs:comment>
+        <rdfs:label xml:lang="fr">possède</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -215,6 +231,7 @@
         <rdfs:domain rdf:resource="http://data.pariscite.fr/def/onto#Commande"/>
         <rdfs:range rdf:resource="http://data.pariscite.fr/def/onto#Entreprise"/>
         <rdfs:comment xml:lang="fr">Exprime le fait qu&apos;une Entreprise reçoive le montant d&apos;une Commande.</rdfs:comment>
+        <rdfs:label xml:lang="fr">rémunère</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -228,6 +245,7 @@
         <rdfs:domain rdf:resource="http://data.pariscite.fr/def/onto#Entrepôt"/>
         <rdfs:range rdf:resource="http://data.pariscite.fr/def/onto#Produit"/>
         <rdfs:comment xml:lang="fr">Exprime le fait qu&apos;un Entrepôt conserve des Produits.</rdfs:comment>
+        <rdfs:label xml:lang="fr">stocke</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -243,13 +261,16 @@
         <rdfs:domain rdf:resource="http://data.pariscite.fr/def/onto#Livraison"/>
         <rdfs:range rdf:resource="http://data.pariscite.fr/def/onto#Commande"/>
         <rdfs:comment xml:lang="fr">Exprime le fait qu&apos;une Livraison contienne une Commande.</rdfs:comment>
+        <rdfs:label xml:lang="fr">transporte</rdfs:label>
     </owl:ObjectProperty>
     
 
 
     <!-- http://data.pariscite.fr/def/onto#transportéPar -->
 
-    <owl:ObjectProperty rdf:about="http://data.pariscite.fr/def/onto#transportéPar"/>
+    <owl:ObjectProperty rdf:about="http://data.pariscite.fr/def/onto#transportéPar">
+        <rdfs:label xml:lang="fr">transporté par</rdfs:label>
+    </owl:ObjectProperty>
     
 
 
@@ -262,13 +283,16 @@
         <rdfs:domain rdf:resource="http://data.pariscite.fr/def/onto#Entreprise"/>
         <rdfs:range rdf:resource="http://data.pariscite.fr/def/onto#Produit"/>
         <rdfs:comment xml:lang="fr">Exprime le fait qu&apos;une Entreprise mette en vente un Produit.</rdfs:comment>
+        <rdfs:label xml:lang="fr">vend</rdfs:label>
     </owl:ObjectProperty>
     
 
 
     <!-- http://data.pariscite.fr/def/onto#venduPar -->
 
-    <owl:ObjectProperty rdf:about="http://data.pariscite.fr/def/onto#venduPar"/>
+    <owl:ObjectProperty rdf:about="http://data.pariscite.fr/def/onto#venduPar">
+        <rdfs:label xml:lang="fr">vendu par</rdfs:label>
+    </owl:ObjectProperty>
     
 
 
@@ -281,13 +305,16 @@
         <rdfs:domain rdf:resource="http://data.pariscite.fr/def/onto#Client"/>
         <rdfs:range rdf:resource="http://data.pariscite.fr/def/onto#Compte"/>
         <rdfs:comment xml:lang="fr">Exprime le fait qu&apos;un Client possède un Compte.</rdfs:comment>
+        <rdfs:label xml:lang="fr">s&apos;authentifie</rdfs:label>
     </owl:ObjectProperty>
     
 
 
     <!-- http://data.pariscite.fr/def/onto#s&apos;effectueSur -->
 
-    <owl:ObjectProperty rdf:about="http://data.pariscite.fr/def/onto#s&apos;effectueSur"/>
+    <owl:ObjectProperty rdf:about="http://data.pariscite.fr/def/onto#s&apos;effectueSur">
+        <rdfs:label xml:lang="fr">s&apos;effectue sur</rdfs:label>
+    </owl:ObjectProperty>
     
 
 
@@ -347,6 +374,7 @@
     <owl:DatatypeProperty rdf:about="http://data.pariscite.fr/def/onto#adresse">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="fr">L&apos;adresse d&apos;un Entrepôt, d&apos;un Client ou d&apos;une Entreprise</rdfs:comment>
+        <rdfs:label xml:lang="fr">adresse</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -357,6 +385,7 @@
         <rdfs:domain rdf:resource="http://data.pariscite.fr/def/onto#Client"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
         <rdfs:comment xml:lang="fr">L&apos;age d&apos;un Client.</rdfs:comment>
+        <rdfs:label xml:lang="fr">âge</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -367,6 +396,7 @@
         <rdfs:domain rdf:resource="http://data.pariscite.fr/def/onto#Produit"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="fr">L&apos;appelation d&apos;un Produit.</rdfs:comment>
+        <rdfs:label xml:lang="fr">appelation</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -377,6 +407,7 @@
         <rdfs:domain rdf:resource="http://data.pariscite.fr/def/onto#Produit"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="fr">Les couleurs d&apos;un Produit.</rdfs:comment>
+        <rdfs:label xml:lang="fr">couleur</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -387,6 +418,7 @@
         <rdfs:domain rdf:resource="http://data.pariscite.fr/def/onto#Produit"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="fr">La marque d&apos;un Produit.</rdfs:comment>
+        <rdfs:label xml:lang="fr">marque</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -397,6 +429,7 @@
         <rdfs:domain rdf:resource="http://data.pariscite.fr/def/onto#Produit"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="fr">Les matériaux d&apos;un Produit.</rdfs:comment>
+        <rdfs:label xml:lang="fr">matériaux</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -406,6 +439,7 @@
     <owl:DatatypeProperty rdf:about="http://data.pariscite.fr/def/onto#montant">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <rdfs:comment xml:lang="fr">Le montant d&apos;une Commande ou d&apos;un Produit.</rdfs:comment>
+        <rdfs:label xml:lang="fr">montant</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -416,6 +450,7 @@
         <rdfs:domain rdf:resource="http://data.pariscite.fr/def/onto#Client"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="fr">La nationalité d&apos;un Client.</rdfs:comment>
+        <rdfs:label xml:lang="fr">nationalité</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -426,6 +461,7 @@
         <rdfs:domain rdf:resource="http://data.pariscite.fr/def/onto#Client"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="fr">Le nom d&apos;un Client.</rdfs:comment>
+        <rdfs:label xml:lang="fr">nom</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -436,6 +472,7 @@
         <rdfs:domain rdf:resource="http://data.pariscite.fr/def/onto#Produit"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
         <rdfs:comment xml:lang="fr">Le nombre de reviews d&apos;un Produit.</rdfs:comment>
+        <rdfs:label xml:lang="fr">nombre d&apos;évaluations</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -446,6 +483,7 @@
         <rdfs:domain rdf:resource="http://data.pariscite.fr/def/onto#Produit"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <rdfs:comment xml:lang="fr">La note moyenne d&apos;un Produit.</rdfs:comment>
+        <rdfs:label xml:lang="fr">note</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -456,6 +494,7 @@
         <rdfs:domain rdf:resource="http://data.pariscite.fr/def/onto#Client"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="fr">Le prénom d&apos;un Client.</rdfs:comment>
+        <rdfs:label xml:lang="fr">prénom</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -466,6 +505,7 @@
         <rdfs:domain rdf:resource="http://data.pariscite.fr/def/onto#Client"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="fr">Le sexe d&apos;un Client.</rdfs:comment>
+        <rdfs:label xml:lang="fr">sexe</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -476,6 +516,7 @@
         <rdfs:domain rdf:resource="http://data.pariscite.fr/def/onto#Produit"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
         <rdfs:comment xml:lang="fr">Indicateur de si un Produit est en solde.</rdfs:comment>
+        <rdfs:label xml:lang="fr">solde</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -486,6 +527,7 @@
         <rdfs:domain rdf:resource="http://data.pariscite.fr/def/onto#Produit"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="fr">Le style d&apos;un Produit.</rdfs:comment>
+        <rdfs:label xml:lang="fr">style</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -496,6 +538,7 @@
         <rdfs:domain rdf:resource="http://data.pariscite.fr/def/onto#Site"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="fr">L&apos;adresse internet d&apos;un Site.</rdfs:comment>
+        <rdfs:label xml:lang="fr">url</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -515,6 +558,7 @@
 
     <owl:Class rdf:about="http://data.pariscite.fr/def/onto#Accessoires">
         <rdfs:subClassOf rdf:resource="http://data.pariscite.fr/def/onto#Décoration"/>
+        <rdfs:label xml:lang="fr">Décoration Accessoires</rdfs:label>
     </owl:Class>
     
 
@@ -524,6 +568,7 @@
     <owl:Class rdf:about="http://data.pariscite.fr/def/onto#Aménagement_Intérieur">
         <rdfs:subClassOf rdf:resource="http://data.pariscite.fr/def/onto#Produit"/>
         <rdfs:comment xml:lang="fr">Un Produit visant à améliorer, rénover ou repenser un bien immobilier.</rdfs:comment>
+        <rdfs:label xml:lang="fr">Aménagement Intérieur</rdfs:label>
     </owl:Class>
     
 
@@ -532,6 +577,7 @@
 
     <owl:Class rdf:about="http://data.pariscite.fr/def/onto#Art">
         <rdfs:subClassOf rdf:resource="http://data.pariscite.fr/def/onto#Décoration"/>
+        <rdfs:label xml:lang="fr">Décoration Art</rdfs:label>
     </owl:Class>
     
 
@@ -540,6 +586,7 @@
 
     <owl:Class rdf:about="http://data.pariscite.fr/def/onto#Aspirateur">
         <rdfs:subClassOf rdf:resource="http://data.pariscite.fr/def/onto#Aménagement_Intérieur"/>
+        <rdfs:label xml:lang="fr">Aspirateur</rdfs:label>
     </owl:Class>
     
 
@@ -562,6 +609,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="fr">Un individu achetant un Produit vendu par une Entreprise.</rdfs:comment>
+        <rdfs:label xml:lang="fr">Client</rdfs:label>
     </owl:Class>
     
 
@@ -601,6 +649,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="fr">L&apos;achat par un Client d&apos;au moins un Produit vendu sur le Site d&apos;une Entreprise.</rdfs:comment>
+        <rdfs:label xml:lang="fr">Commande</rdfs:label>
     </owl:Class>
     
 
@@ -617,6 +666,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="fr">Le compte d&apos;un Client sur un Site afin de passer une Commande.</rdfs:comment>
+        <rdfs:label xml:lang="fr">Compte</rdfs:label>
     </owl:Class>
     
 
@@ -625,6 +675,7 @@
 
     <owl:Class rdf:about="http://data.pariscite.fr/def/onto#Couette">
         <rdfs:subClassOf rdf:resource="http://data.pariscite.fr/def/onto#Literie"/>
+        <rdfs:label xml:lang="fr">Couette</rdfs:label>
     </owl:Class>
     
 
@@ -633,6 +684,7 @@
 
     <owl:Class rdf:about="http://data.pariscite.fr/def/onto#Couverture">
         <rdfs:subClassOf rdf:resource="http://data.pariscite.fr/def/onto#Literie"/>
+        <rdfs:label xml:lang="fr">Couverture</rdfs:label>
     </owl:Class>
     
 
@@ -641,6 +693,7 @@
 
     <owl:Class rdf:about="http://data.pariscite.fr/def/onto#Cuisine">
         <rdfs:subClassOf rdf:resource="http://data.pariscite.fr/def/onto#Aménagement_Intérieur"/>
+        <rdfs:label xml:lang="fr">Aménagement Intérieur Cuisine</rdfs:label>
     </owl:Class>
     
 
@@ -649,6 +702,7 @@
 
     <owl:Class rdf:about="http://data.pariscite.fr/def/onto#Decoration_Mur">
         <rdfs:subClassOf rdf:resource="http://data.pariscite.fr/def/onto#Décoration"/>
+        <rdfs:label xml:lang="fr">Décoration Mur</rdfs:label>
     </owl:Class>
     
 
@@ -657,6 +711,7 @@
 
     <owl:Class rdf:about="http://data.pariscite.fr/def/onto#Decoration_Noel">
         <rdfs:subClassOf rdf:resource="http://data.pariscite.fr/def/onto#Décoration"/>
+        <rdfs:label xml:lang="fr">Décoration Noël</rdfs:label>
     </owl:Class>
     
 
@@ -666,6 +721,7 @@
     <owl:Class rdf:about="http://data.pariscite.fr/def/onto#Décoration">
         <rdfs:subClassOf rdf:resource="http://data.pariscite.fr/def/onto#Produit"/>
         <rdfs:comment xml:lang="fr">Un Produit peu volumineux qui complète le mobilier d&apos;intérieur.</rdfs:comment>
+        <rdfs:label xml:lang="fr">Décoration</rdfs:label>
     </owl:Class>
     
 
@@ -674,6 +730,7 @@
 
     <owl:Class rdf:about="http://data.pariscite.fr/def/onto#Ensemble_Literie">
         <rdfs:subClassOf rdf:resource="http://data.pariscite.fr/def/onto#Literie"/>
+        <rdfs:label xml:lang="fr">Ensemble Literie</rdfs:label>
     </owl:Class>
     
 
@@ -701,6 +758,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="fr">Une entité mettant à dispositions des articles à la vente.</rdfs:comment>
+        <rdfs:label xml:lang="fr">Entreprise</rdfs:label>
     </owl:Class>
     
 
@@ -721,6 +779,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="fr">Un emplacement physique au sein duquel des Produits vendus par une Entreprise sont stockés.</rdfs:comment>
+        <rdfs:label xml:lang="fr">Entrepôt</rdfs:label>
     </owl:Class>
     
 
@@ -729,6 +788,7 @@
 
     <owl:Class rdf:about="http://data.pariscite.fr/def/onto#Lampe">
         <rdfs:subClassOf rdf:resource="http://data.pariscite.fr/def/onto#Luminaire"/>
+        <rdfs:label xml:lang="fr">Lampe</rdfs:label>
     </owl:Class>
     
 
@@ -738,6 +798,7 @@
     <owl:Class rdf:about="http://data.pariscite.fr/def/onto#Literie">
         <rdfs:subClassOf rdf:resource="http://data.pariscite.fr/def/onto#Produit"/>
         <rdfs:comment xml:lang="fr">Un Produit composant l&apos;univers du couchage.</rdfs:comment>
+        <rdfs:label xml:lang="fr">Literie</rdfs:label>
     </owl:Class>
     
 
@@ -752,6 +813,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="fr">Le transit d&apos;une Commande faite par un Client depuis un Entrepôt vers son domicile.</rdfs:comment>
+        <rdfs:label xml:lang="fr">Livraison</rdfs:label>
     </owl:Class>
     
 
@@ -761,6 +823,7 @@
     <owl:Class rdf:about="http://data.pariscite.fr/def/onto#Luminaire">
         <rdfs:subClassOf rdf:resource="http://data.pariscite.fr/def/onto#Produit"/>
         <rdfs:comment xml:lang="fr">Un Produit dont la fonction première est de prodiguer un éclairage artificiel.</rdfs:comment>
+        <rdfs:label xml:lang="fr">Luminaire</rdfs:label>
     </owl:Class>
     
 
@@ -769,6 +832,7 @@
 
     <owl:Class rdf:about="http://data.pariscite.fr/def/onto#Luminaire_Cuisine">
         <rdfs:subClassOf rdf:resource="http://data.pariscite.fr/def/onto#Luminaire"/>
+        <rdfs:label xml:lang="fr">Luminaire Cuisine</rdfs:label>
     </owl:Class>
     
 
@@ -777,6 +841,7 @@
 
     <owl:Class rdf:about="http://data.pariscite.fr/def/onto#Luminaire_Exterieur">
         <rdfs:subClassOf rdf:resource="http://data.pariscite.fr/def/onto#Luminaire"/>
+        <rdfs:label xml:lang="fr">Luminaire Extérieur</rdfs:label>
     </owl:Class>
     
 
@@ -785,6 +850,7 @@
 
     <owl:Class rdf:about="http://data.pariscite.fr/def/onto#Luminaire_Plafond">
         <rdfs:subClassOf rdf:resource="http://data.pariscite.fr/def/onto#Luminaire"/>
+        <rdfs:label xml:lang="fr">Luminaire Plafond</rdfs:label>
     </owl:Class>
     
 
@@ -793,6 +859,7 @@
 
     <owl:Class rdf:about="http://data.pariscite.fr/def/onto#Matelas">
         <rdfs:subClassOf rdf:resource="http://data.pariscite.fr/def/onto#Literie"/>
+        <rdfs:label xml:lang="fr">Matelas</rdfs:label>
     </owl:Class>
     
 
@@ -802,6 +869,7 @@
     <owl:Class rdf:about="http://data.pariscite.fr/def/onto#Meuble">
         <rdfs:subClassOf rdf:resource="http://data.pariscite.fr/def/onto#Produit"/>
         <rdfs:comment xml:lang="fr">Un Produit sensiblement volumineux qui composent le gros du mobilier d&apos;intérieur.</rdfs:comment>
+        <rdfs:label xml:lang="fr">Meuble</rdfs:label>
     </owl:Class>
     
 
@@ -810,6 +878,7 @@
 
     <owl:Class rdf:about="http://data.pariscite.fr/def/onto#Meuble_Bureau">
         <rdfs:subClassOf rdf:resource="http://data.pariscite.fr/def/onto#Meuble"/>
+        <rdfs:label xml:lang="fr">Meuble Bureau</rdfs:label>
     </owl:Class>
     
 
@@ -818,6 +887,7 @@
 
     <owl:Class rdf:about="http://data.pariscite.fr/def/onto#Meuble_Chambre">
         <rdfs:subClassOf rdf:resource="http://data.pariscite.fr/def/onto#Meuble"/>
+        <rdfs:label xml:lang="fr">Meuble Chambre</rdfs:label>
     </owl:Class>
     
 
@@ -826,6 +896,7 @@
 
     <owl:Class rdf:about="http://data.pariscite.fr/def/onto#Meuble_Cuisine">
         <rdfs:subClassOf rdf:resource="http://data.pariscite.fr/def/onto#Meuble"/>
+        <rdfs:label xml:lang="fr">Meuble Cuisine</rdfs:label>
     </owl:Class>
     
 
@@ -834,6 +905,7 @@
 
     <owl:Class rdf:about="http://data.pariscite.fr/def/onto#Meuble_Salle_a_manger">
         <rdfs:subClassOf rdf:resource="http://data.pariscite.fr/def/onto#Meuble"/>
+        <rdfs:label xml:lang="fr">Meuble Salle à manger</rdfs:label>
     </owl:Class>
     
 
@@ -842,6 +914,7 @@
 
     <owl:Class rdf:about="http://data.pariscite.fr/def/onto#Meuble_Salon">
         <rdfs:subClassOf rdf:resource="http://data.pariscite.fr/def/onto#Meuble"/>
+        <rdfs:label xml:lang="fr">Meuble Salon</rdfs:label>
     </owl:Class>
     
 
@@ -850,6 +923,7 @@
 
     <owl:Class rdf:about="http://data.pariscite.fr/def/onto#Meuble_Terasse">
         <rdfs:subClassOf rdf:resource="http://data.pariscite.fr/def/onto#Meuble"/>
+        <rdfs:label xml:lang="fr">Meuble Terasse</rdfs:label>
     </owl:Class>
     
 
@@ -858,6 +932,7 @@
 
     <owl:Class rdf:about="http://data.pariscite.fr/def/onto#Mirroir">
         <rdfs:subClassOf rdf:resource="http://data.pariscite.fr/def/onto#Décoration"/>
+        <rdfs:label xml:lang="fr">Mirroir</rdfs:label>
     </owl:Class>
     
 
@@ -866,6 +941,7 @@
 
     <owl:Class rdf:about="http://data.pariscite.fr/def/onto#Oreiller">
         <rdfs:subClassOf rdf:resource="http://data.pariscite.fr/def/onto#Literie"/>
+        <rdfs:label xml:lang="fr">Oreiller</rdfs:label>
     </owl:Class>
     
 
@@ -874,6 +950,7 @@
 
     <owl:Class rdf:about="http://data.pariscite.fr/def/onto#Produit">
         <rdfs:comment xml:lang="fr">un article mis à disposition par une Entreprise</rdfs:comment>
+        <rdfs:label xml:lang="fr">Produit</rdfs:label>
     </owl:Class>
     
 
@@ -882,6 +959,7 @@
 
     <owl:Class rdf:about="http://data.pariscite.fr/def/onto#Rangement">
         <rdfs:subClassOf rdf:resource="http://data.pariscite.fr/def/onto#Aménagement_Intérieur"/>
+        <rdfs:label xml:lang="fr">Aménagement Intérieur Rangement</rdfs:label>
     </owl:Class>
     
 
@@ -890,6 +968,7 @@
 
     <owl:Class rdf:about="http://data.pariscite.fr/def/onto#Rideaux">
         <rdfs:subClassOf rdf:resource="http://data.pariscite.fr/def/onto#Décoration"/>
+        <rdfs:label xml:lang="fr">Rideaux</rdfs:label>
     </owl:Class>
     
 
@@ -898,6 +977,7 @@
 
     <owl:Class rdf:about="http://data.pariscite.fr/def/onto#Salle_de_bain">
         <rdfs:subClassOf rdf:resource="http://data.pariscite.fr/def/onto#Aménagement_Intérieur"/>
+        <rdfs:label xml:lang="fr">Aménagement Intérieur Salle de bain</rdfs:label>
     </owl:Class>
     
 
@@ -906,6 +986,7 @@
 
     <owl:Class rdf:about="http://data.pariscite.fr/def/onto#Site">
         <rdfs:comment xml:lang="fr">Le site internet d&apos;une Entreprise sur lequel les différents Produits vendus par celle-ci sont exposés.</rdfs:comment>
+        <rdfs:label xml:lang="fr">Site</rdfs:label>
     </owl:Class>
     
 
@@ -914,6 +995,7 @@
 
     <owl:Class rdf:about="http://data.pariscite.fr/def/onto#Sol_Mur">
         <rdfs:subClassOf rdf:resource="http://data.pariscite.fr/def/onto#Aménagement_Intérieur"/>
+        <rdfs:label xml:lang="fr">Aménagement Intérieur Sol et/ou Mur</rdfs:label>
     </owl:Class>
     
 
@@ -923,6 +1005,7 @@
     <owl:Class rdf:about="http://data.pariscite.fr/def/onto#Tapis">
         <rdfs:subClassOf rdf:resource="http://data.pariscite.fr/def/onto#Produit"/>
         <rdfs:comment xml:lang="fr">Un Produit qui a pour fonction première d&apos;embellir les sols (ou les murs).</rdfs:comment>
+        <rdfs:label xml:lang="fr">Tapis</rdfs:label>
     </owl:Class>
     
 
@@ -931,6 +1014,7 @@
 
     <owl:Class rdf:about="http://data.pariscite.fr/def/onto#Tapis_Artisanal">
         <rdfs:subClassOf rdf:resource="http://data.pariscite.fr/def/onto#Tapis"/>
+        <rdfs:label xml:lang="fr">Tapis Artisanal</rdfs:label>
     </owl:Class>
     
 
@@ -939,6 +1023,7 @@
 
     <owl:Class rdf:about="http://data.pariscite.fr/def/onto#Tapis_Bain">
         <rdfs:subClassOf rdf:resource="http://data.pariscite.fr/def/onto#Tapis"/>
+        <rdfs:label xml:lang="fr">Tapis Bain</rdfs:label>
     </owl:Class>
     
 
@@ -947,6 +1032,7 @@
 
     <owl:Class rdf:about="http://data.pariscite.fr/def/onto#Tapis_Cuisine">
         <rdfs:subClassOf rdf:resource="http://data.pariscite.fr/def/onto#Tapis"/>
+        <rdfs:label xml:lang="fr">Tapis Cuisine</rdfs:label>
     </owl:Class>
     
 
@@ -955,6 +1041,7 @@
 
     <owl:Class rdf:about="http://data.pariscite.fr/def/onto#Tapis_Exterieur">
         <rdfs:subClassOf rdf:resource="http://data.pariscite.fr/def/onto#Tapis"/>
+        <rdfs:label xml:lang="fr">Tapis Extérieur</rdfs:label>
     </owl:Class>
     
 
@@ -963,6 +1050,7 @@
 
     <owl:Class rdf:about="http://data.pariscite.fr/def/onto#Tapis_Persan">
         <rdfs:subClassOf rdf:resource="http://data.pariscite.fr/def/onto#Tapis"/>
+        <rdfs:label xml:lang="fr">Tapis Persan</rdfs:label>
     </owl:Class>
     
 
@@ -971,6 +1059,7 @@
 
     <owl:Class rdf:about="http://data.pariscite.fr/def/onto#Tapis_Sol">
         <rdfs:subClassOf rdf:resource="http://data.pariscite.fr/def/onto#Tapis"/>
+        <rdfs:label xml:lang="fr">Tapis Sol</rdfs:label>
     </owl:Class>
     
 
@@ -979,6 +1068,7 @@
 
     <owl:Class rdf:about="http://data.pariscite.fr/def/onto#Édredon">
         <rdfs:subClassOf rdf:resource="http://data.pariscite.fr/def/onto#Literie"/>
+        <rdfs:label xml:lang="fr">Édredon</rdfs:label>
     </owl:Class>
     
 
